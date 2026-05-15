@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mostafa Abdelgawad — Graphic Designer & Video Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Bebas Neue (display) + Outfit (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">MA</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <p class="loader-text">Loading Experience…</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       FLOATING PARTICLES CANVAS
+  ═══════════════════════════════════════════════════ -->
+  <canvas id="particles"></canvas>
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-mark">MA</span>
+      <span class="logo-text">Mostafa Abdelgawad</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link" data-label="Home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-label="About">About</a></li>
+      <li><a href="#services" class="nav-link" data-label="Services">Services</a></li>
+      <li><a href="#portfolio" class="nav-link" data-label="Portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link" data-label="Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Creative Portfolio</p>
+      <h1 class="hero-name reveal">
+        <span class="line">Mostafa</span>
+        <span class="line accent">Abdelgawad</span>
+      </h1>
+      <p class="hero-title reveal">Graphic Designer &amp; Video Editor</p>
+      <p class="hero-sub reveal">Football Thumbnails · Social Media Visuals · Cinematic Edits</p>
+      <div class="hero-cta reveal">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <!-- Decorative floating badge -->
+    <div class="hero-badge">
+      <svg viewBox="0 0 120 120" class="badge-ring">
+        <path id="badgePath" d="M60,10 a50,50 0 1,1 -0.001,0" fill="none" />
+        <text>
+          <textPath href="#badgePath" startOffset="0%">⚽ FOOTBALL · DESIGN · VIDEO · CREATIVE ·</textPath>
+        </text>
+      </svg>
+      <span class="badge-center">MA</span>
+    </div>
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-tag reveal">01 — About</div>
+      <div class="about-grid">
+        <!-- Left: bio -->
+        <div class="about-bio">
+          <h2 class="section-title reveal">Crafting Visual<br /><span class="accent">Stories</span> That Hit</h2>
+          <p class="about-text reveal">
+            Mostafa is a Graphic Designer and Video Editor specialized in creating
+            professional football YouTube thumbnails and engaging visual content.
+            He creates eye-catching sports thumbnails, creative social media visuals,
+            and dynamic short-form video edits with a modern cinematic style.
+          </p>
+          <p class="about-text reveal">
+            Every pixel is intentional. Every cut is deliberate. The goal is always
+            the same — visuals that stop the scroll and drive results.
+          </p>
+          <!-- Software pills -->
+          <div class="software-row reveal">
+            <span class="pill">Adobe Photoshop</span>
+            <span class="pill">Premiere Pro</span>
+            <span class="pill">Illustrator</span>
+            <span class="pill">CapCut</span>
+          </div>
+        </div>
+        <!-- Right: skills -->
+        <div class="about-skills">
+          <div class="skill-card reveal" style="--d:0.0s">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-info">
+              <h4>YouTube Thumbnail Design</h4>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:0.1s">
+            <div class="skill-icon">⚽</div>
+            <div class="skill-info">
+              <h4>Football Thumbnail Design</h4>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:97%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:0.2s">
+            <div class="skill-icon">🎬</div>
+            <div class="skill-info">
+              <h4>Video Editing</h4>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:0.3s">
+            <div class="skill-icon">📱</div>
+            <div class="skill-info">
+              <h4>Social Media Design</h4>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:92%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:0.4s">
+            <div class="skill-icon">🔤</div>
+            <div class="skill-info">
+              <h4>Typography</h4>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:88%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:0.5s">
+            <div class="skill-icon">🎞️</div>
+            <div class="skill-info">
+              <h4>Color Correction</h4>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:93%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       SERVICES SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-tag reveal">02 — Services</div>
+      <h2 class="section-title reveal">What I <span class="accent">Deliver</span></h2>
+      <div class="services-grid">
+        <div class="service-card reveal" style="--d:0.0s">
+          <div class="service-num">01</div>
+          <div class="service-icon">⚽</div>
+          <h3>Football Thumbnails</h3>
+          <p>High-impact, cinematic YouTube thumbnails built to maximize click-through rates for football channels.</p>
+        </div>
+        <div class="service-card reveal" style="--d:0.15s">
+          <div class="service-num">02</div>
+          <div class="service-icon">📸</div>
+          <h3>Social Media Design</h3>
+          <p>Scroll-stopping Instagram, Facebook, and TikTok visuals engineered for engagement and brand recognition.
+          </p>
+        </div>
+        <div class="service-card reveal" style="--d:0.3s">
+          <div class="service-num">03</div>
+          <div class="service-icon">🎬</div>
+          <h3>Short-Form Video Editing</h3>
+          <p>Fast-paced, cinematic reels and shorts with snappy cuts, motion graphics, and color-graded aesthetics.</p>
+        </div>
+        <div class="service-card reveal" style="--d:0.45s">
+          <div class="service-num">04</div>
+          <div class="service-icon">🏟️</div>
+          <h3>Sports Visual Content</h3>
+          <p>Comprehensive sports-branded content — match previews, highlights, player graphics, and team creatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       PORTFOLIO SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-tag reveal">03 — Portfolio</div>
+      <h2 class="section-title reveal">Selected <span class="accent">Work</span></h2>
+
+      <!-- Category Tabs -->
+      <div class="portfolio-tabs reveal">
+        <button class="tab-btn active" data-tab="football">⚽ Football Thumbnails</button>
+        <button class="tab-btn" data-tab="social">📱 Social Media</button>
+        <button class="tab-btn" data-tab="video">🎬 Video Editing</button>
+      </div>
+
+      <!-- ── FOOTBALL THUMBNAILS PANEL ─────────────────── -->
+       
+      <div class="tab-panel active" id="tab-football">
+        <div class="football-grid">
+          <!-- Card 1 -->
+          <div class="thumb-card reveal" style="--d:0.0s">
+            <div class="thumb-img-wrap">
+              <img src="images/football1.jpg" alt="Football Thumbnail 1" loading="lazy" />
+              <div class="thumb-overlay">
+                <div class="thumb-overlay-inner">
+                  <span class="thumb-type">YouTube Thumbnail</span>
+                  <h4>Match Day Preview</h4>
+                  <button class="thumb-view-btn" onclick="openLightbox('images/football1.jpg','Match Day Preview')">View
+                    Full</button>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-meta">
+              <p>Football — YouTube</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="thumb-card reveal" style="--d:0.1s">
+            <div class="thumb-img-wrap">
+              <img src="images/football2.jpg" alt="Football Thumbnail 2" loading="lazy" />
+              <div class="thumb-overlay">
+                <div class="thumb-overlay-inner">
+                  <span class="thumb-type">YouTube Thumbnail</span>
+                  <h4>Goal Highlights</h4>
+                  <button class="thumb-view-btn" onclick="openLightbox('images/football2.jpg','Goal Highlights')">View
+                    Full</button>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-meta">
+              <p>Football — YouTube</p>
+            </div>
+          </div>
+          <div class="thumb-card reveal" style="--d:0.1s">
+            <div class="thumb-img-wrap">
+              <img src="images/newthumb.jpg" alt="Football Thumbnail 2" loading="lazy" />
+              <div class="thumb-overlay">
+                <div class="thumb-overlay-inner">
+                  <span class="thumb-type">YouTube Thumbnail</span>
+                  <h4>Goal Highlights</h4>
+                  <button class="thumb-view-btn" onclick="openLightbox('images/football2.jpg','Goal Highlights')">View
+                    Full</button>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-meta">
+              <p>Football — YouTube</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="thumb-card reveal" style="--d:0.2s">
+            <div class="thumb-img-wrap">
+              <img src="images/football3.png" alt="Football Thumbnail 3" loading="lazy" />
+              <div class="thumb-overlay">
+                <div class="thumb-overlay-inner">
+                  <span class="thumb-type">YouTube Thumbnail</span>
+                  <h4>Champions Preview</h4>
+                  <button class="thumb-view-btn" onclick="openLightbox('images/football3.jpg','Champions Preview')">View
+                    Full</button>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-meta">
+              <p>Football — YouTube</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="thumb-card reveal" style="--d:0.3s">
+            <div class="thumb-img-wrap">
+              <img src="images/football4.jpg" alt="Football Thumbnail 4" loading="lazy" />
+              <div class="thumb-overlay">
+                <div class="thumb-overlay-inner">
+                  <span class="thumb-type">YouTube Thumbnail</span>
+                  <h4>Player Feature</h4>
+                  <button class="thumb-view-btn" onclick="openLightbox('images/football4.jpg','Player Feature')">View
+                    Full</button>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-meta">
+              <p>Football — YouTube</p>
+            </div>
+          </div>
+          
+          <!-- Card 5 (featured / wide) -->
+          <div class="thumb-card featured reveal" style="--d:0.4s">
+            <div class="thumb-img-wrap">
+              <img src="images/football5.jpeg" alt="Football Thumbnail 5" loading="lazy" />
+              <div class="thumb-overlay">
+                <div class="thumb-overlay-inner">
+                  <span class="thumb-type">Featured Work</span>
+                  <h4>UCL QF</h4>
+                  <button class="thumb-view-btn"
+                    onclick="openLightbox('images/football5.jpg','Derby Night Showdown')">View Full</button>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-meta">
+              <p>Football — YouTube · Featured</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SOCIAL MEDIA PANEL ─────────────────────────── -->
+      <div class="tab-panel" id="tab-social">
+        <div class="social-grid">
+          <!-- Card 1 -->
+          <div class="social-card reveal" style="--d:0.0s">
+            <div class="social-phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/social1.jpg" alt="Social Media Design 1" loading="lazy" />
+                <div class="phone-overlay">
+                  <div class="insta-header">
+                    <div class="insta-avatar"></div>
+                    <div class="insta-meta"><span>@mostafa.designs</span><span class="insta-sub">Sponsored</span></div>
+                  </div>
+                  <div class="insta-actions">
+                    <span>❤️ 12.4K</span>
+                    <span>💬 843</span>
+                    <span>📤</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="social-card-label">
+              <span class="social-platform">Instagram Post</span>
+              <h4>Creative Post #1</h4>
+              <button class="thumb-view-btn"
+                onclick="openLightbox('images/social1.jpg','Creative Post #1')">Expand</button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="social-card reveal" style="--d:0.15s">
+            <div class="social-phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/social2.jpg" alt="Social Media Design 2" loading="lazy" />
+                <div class="phone-overlay">
+                  <div class="insta-header">
+                    <div class="insta-avatar"></div>
+                    <div class="insta-meta"><span>@mostafa.designs</span><span class="insta-sub">Post</span></div>
+                  </div>
+                  <div class="insta-actions">
+                    <span>❤️ 9.1K</span>
+                    <span>💬 502</span>
+                    <span>📤</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="social-card-label">
+              <span class="social-platform">Facebook Banner</span>
+              <h4>Creative Post #2</h4>
+              <button class="thumb-view-btn"
+                onclick="openLightbox('images/social2.jpg','Creative Post #2')">Expand</button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="social-card reveal" style="--d:0.3s">
+            <div class="social-phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/social3.jpg" alt="Social Media Design 3" loading="lazy" />
+                <div class="phone-overlay">
+                  <div class="insta-header">
+                    <div class="insta-avatar"></div>
+                    <div class="insta-meta"><span>@mostafa.designs</span><span class="insta-sub">Story</span></div>
+                  </div>
+                  <div class="insta-actions">
+                    <span>❤️ 7.8K</span>
+                    <span>💬 310</span>
+                    <span>📤</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="social-card-label">
+              <span class="social-platform">Instagram Story</span>
+              <h4>Creative Post #3</h4>
+              <button class="thumb-view-btn"
+                onclick="openLightbox('images/social3.jpg','Creative Post #3')">Expand</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── VIDEO EDITING PANEL ────────────────────────── -->
+<!-- ── VIDEO EDITING PANEL ────────────────────────── -->
+<div class="tab-panel" id="tab-video">
+
+<div class="videos-container">
+
+    <!-- Video 1 -->
+    <a href="https://www.youtube.com/shorts/L2YUD-kVTN0" target="_blank" class="video-card">
+
+        <img src="videos/video1.png" alt="Football Video">
+
+        <div class="play-button">▶</div>
+
+        <div class="video-content">
+            <h3>Bayern vs Real Madrid</h3>
+            <p>Match Analysis</p>
+        </div>
+
+    </a>
+
+    <!-- Video 2 -->
+    <a href="https://www.youtube.com/shorts/8Lu8FblPZHo" target="_blank" class="video-card">
+
+        <img src="videos/video2.png" alt="Football Video">
+
+        <div class="play-button">▶</div>
+
+        <div class="video-content">
+            <h3>Barcelona vs Atletico</h3>
+            <p>Tactical Breakdown</p>
+        </div>
+
+    </a>
+
+    <!-- Video 3 -->
+    <a href="https://www.youtube.com/watch?v=lxDxlLkCVLM" target="_blank" class="video-card wide-video">
+
+        <img src="videos/video3.jpeg" alt="Football Video">
+
+        <div class="play-button">▶</div>
+
+        <div class="video-content">
+            <h3>Football Edit</h3>
+            <p>Cinematic Sports Edit</p>
+        </div>
+
+    </a>
+
+</div>
+
+</div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-tag reveal">04 — Contact</div>
+      <h2 class="section-title reveal">Let's <span class="accent">Work</span> Together</h2>
+      <p class="contact-intro reveal">
+        Ready to elevate your channel or brand with premium visuals?
+        Drop me a message and let's create something extraordinary.
+      </p>
+      <form class="contact-form reveal" id="contactForm" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option value="">Select a service…</option>
+            <option>Football YouTube Thumbnails</option>
+            <option>Social Media Design</option>
+            <option>Short-Form Video Editing</option>
+            <option>Sports Visual Content</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+        <p class="form-success" id="formSuccess">✅ Message sent! I'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">MA</div>
+      <p class="footer-copy">© 2025 Mostafa Abdelgawad · Graphic Designer &amp; Video Editor</p>
+      <p class="footer-tagline">Built with passion · Designed with precision</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════
+       LIGHTBOX
+  ═══════════════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
