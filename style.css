@@ -1002,6 +1002,44 @@ footer {
 .wide-video{
     grid-column: span 2;
 }
+.social-icons{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    z-index: 1000;
+}
+
+.social-icons a{
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 24px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(0,140,255,0.4);
+}
 /* ── RESPONSIVE ─────────────────────────────────────── */
 @media (max-width: 1024px) {
   .about-grid  { grid-template-columns: 1fr; gap: 48px; }
