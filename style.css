@@ -1084,3 +1084,33 @@ footer {
   .social-phone-frame { width: 180px; height: 340px; }
   .video-reel-card { max-width: 280px; }
 }
+@media (max-width: 768px){
+
+    .videos-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wide-video{
+        grid-column: span 1;
+    }
+
+    .video-card{
+        border-radius: 16px;
+    }
+
+    .video-content h3{
+        font-size: 18px;
+    }
+
+    .video-content p{
+        font-size: 14px;
+    }
+
+    .play-button{
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+}
